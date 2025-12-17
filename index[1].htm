@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+<meta charset="UTF-8">
+<title>राक्सिराङ्ग गाउँपालिका वडा नं. ४</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+body{
+  margin:0;
+  font-family:'Roboto',Kalimati,Arial,sans-serif;
+  background:#f0f2f5;
+  color:#333;
+}
+
+/* HEADER */
+.header{
+  background:linear-gradient(90deg,#8b0000,#ff3333);
+  color:#fff;
+  padding:20px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.3);
+}
+.header-flex{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+}
+.profile-box{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.profile-box img{
+  width:80px;
+  height:80px;
+  border-radius:50%;
+  border:2px solid #fff;
+  box-shadow:0 2px 8px rgba(0,0,0,0.3);
+}
+.center-title{
+  text-align:center;
+  flex:1;
+  font-size:28px;
+  font-weight:bold;
+}
+.center-sub{
+  font-size:18px;
+  margin-top:5px;
+}
+.date-time{
+  font-size:14px;
+  margin-top:5px;
+  font-weight:500;
+}
+
+/* RIBBON */
+.notice-wrap{
+  width:100%;
+  overflow:hidden;
+  background:#fff;
+  border-top:4px solid #8b0000;
+  border-bottom:4px solid #ff9933;
+  margin-top:10px;
+}
+.notice-text{
+  display:inline-block;
+  white-space:nowrap;
+  padding-left:100%;
+  animation:scroll 20s linear infinite;
+  font-size:18px;
+  font-weight:bold;
+  color:#b30000;
+}
+.notice-text span{
+  cursor:pointer;
+  margin-right:25px;
+  padding:5px 12px;
+  border-radius:5px;
+  transition:0.3s;
+}
+.notice-text span:hover{
+  background:#ffcccc;
+  color:#8b0000;
+}
+@keyframes scroll{
+  0%{transform:translateX(0);}
+  100%{transform:translateX(-100%);}
+}
+
+/* PAGE CONTENT */
+.page-container{
+  max-width:1100px;
+  margin:25px auto;
+  padding:15px;
+}
+.page{
+  display:none;
+  background:#fff;
+  border-radius:12px;
+  padding:20px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom:20px;
+  transition:all 0.3s ease;
+}
+.page:hover{
+  transform:translateY(-2px);
+}
+.page h2{
+  border-left:8px solid #ff3333;
+  padding-left:12px;
+  color:#8b0000;
+  margin-bottom:15px;
+}
+.page ul{
+  line-height:1.8;
+  font-size:16px;
+}
+.note{
+  background:#fff3cd;
+  border-left:6px solid #ff9933;
+  padding:10px;
+  margin-top:10px;
+  border-radius:5px;
+}
+
+/* ANNOUNCEMENTS */
+.announcement-container{
+  max-width:1100px;
+  margin:20px auto;
+}
+.announcement{
+  background:#fff;
+  border-left:6px solid #ff9933;
+  padding:15px;
+  margin-bottom:15px;
+  border-radius:10px;
+  box-shadow:0 3px 10px rgba(0,0,0,0.1);
+  cursor:pointer;
+  transition:0.3s;
+}
+.announcement:hover{
+  transform:translateY(-3px);
+  background:#ffefeb;
+}
+.announcement-content{
+  display:none;
+  margin-top:10px;
+  border-top:1px solid #ccc;
+  padding-top:10px;
+}
+.announcement-content img,
+.announcement-content video,
+.announcement-content audio{
+  max-width:100%;
+  border-radius:6px;
+  margin-top:10px;
+}
+
+/* SLIDER / GALLERY */
+.slider{
+  max-width:1100px;
+  margin:20px auto;
+  position:relative;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 4px 12px rgba(0,0,0,0.15);
+}
+.slides img{
+  width:100%;
+  display:none;
+  border-radius:12px;
+}
+.slides img.active{
+  display:block;
+}
+.prev, .next{
+  cursor:pointer;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  background:rgba(0,0,0,0.5);
+  color:#fff;
+  padding:10px;
+  border-radius:50%;
+  font-size:20px;
+  user-select:none;
+}
+.prev{left:10px;}
+.next{right:10px;}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  background:#222;
+  color:#fff;
+  padding:20px;
+  font-size:14px;
+  box-shadow:0 -3px 10px rgba(0,0,0,0.2);
+}
+.footer-links a{
+  color:#ffcc00;
+  margin:0 10px;
+  text-decoration:none;
+}
+.footer-links a:hover{
+  text-decoration:underline;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .header-flex{flex-direction:column;gap:15px;}
+  .center-title{font-size:24px;}
+  .profile-box img{width:70px;height:70px;}
+}
+</style>
+<!-- Code injected by Five-server -->
+  <script async data-id="five-server" data-file="c:\Users\HP\index.html" type="application/javascript" src="/fiveserver.js"></script>
+  </head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-flex">
+    <div class="profile-box">
+      <img src="https://i.ibb.co/9kM1tnfZ/IMG-20251217-WA0003.jpg" alt="वडा अध्यक्ष">
+      <div>
+        सञ्जय कोइराला<br>
+        वडा अध्यक्ष<br>
+        📞 9855071025
+      </div>
+    </div>
+    <div class="center-title">
+      राक्सिराङ्ग गाउँपालिका, वडा नं. ४
+      <div class="center-sub">बागमती प्रदेश, नेपाल</div>
+      <div class="date-time" id="currentDate"></div>
+    </div>
+    <div class="profile-box">
+      <div style="text-align:right">
+        राजेन्द्र सिंह बिष्ट<br>
+        वडा सचिव<br>
+        📞 9840234188
+      </div>
+      <img src="https://i.ibb.co/DgvrnPVy/image.jpg" alt="वडा सचिव">
+    </div>
+  </div>
+</div>
+
+<!-- RIBBON -->
+<div class="notice-wrap">
+  <div class="notice-text" id="ribbon">
+    <span>जन्म दर्ता</span>
+    <span>विवाह दर्ता</span>
+    <span>सम्बन्ध विच्छेद</span>
+    <span>बसाइँसराइ</span>
+    <span>मृत्यु दर्ता</span>
+    <span>सामाजिक सुरक्षा</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<div class="page-container">
+  <div class="page" id="service-1">
+    <h2>जन्म दर्ता – आवश्यक कागजात</h2>
+    <ul>
+      <li>आमा–बाबुको नागरिकता प्रमाणपत्र</li>
+      <li>स्वास्थ्य संस्थाबाट जारी जन्म प्रमाणपत्र</li>
+      <li>वडा कार्यालयको विवरण फाराम</li>
+    </ul>
+    <div class="note">⚠️ आमा–बाबुको नागरिकता अनिवार्य</div>
+  </div>
+  <div class="page" id="service-2">
+    <h2>विवाह दर्ता – आवश्यक कागजात</h2>
+    <ul>
+      <li>पति र पत्नी दुवैको नागरिकता प्रमाणपत्र</li>
+      <li>पति–पत्नी दुवैको आमा–बाबुको नागरिकता</li>
+      <li>वडा सिफारिस वा सम्बन्धित प्रमाणपत्र</li>
+      <li>दुवै पक्षको उपस्थित</li>
+    </ul>
+    <div class="note">⚠️ दुवै पक्षको नागरिकता अनिवार्य</div>
+  </div>
+  <div class="page" id="service-3">
+    <h2>सम्बन्ध विच्छेद – आवश्यक कागजात</h2>
+    <ul>
+      <li>अन्तिम अदालत निर्णय</li>
+      <li>दुवै पक्षको नागरिकता</li>
+      <li>आमा–बाबुको नागरिकता</li>
+    </ul>
+  </div>
+  <div class="page" id="service-4">
+    <h2>बसाइँसराइ – आवश्यक कागजात</h2>
+    <ul>
+      <li>बसाइँसराइ गर्ने व्यक्तिको नागरिकता</li>
+      <li>आमा–बाबुको नागरिकता</li>
+      <li>पुरानो र नयाँ वडा सिफारिस</li>
+      <li>घरधनीको सहमति (भाडामा बस्ने भएमा)</li>
+    </ul>
+  </div>
+  <div class="page" id="service-5">
+    <h2>मृत्यु दर्ता – आवश्यक कागजात</h2>
+    <ul>
+      <li>मृतकको नागरिकता प्रमाणपत्र</li>
+      <li>मृत्यु भएको प्रमाण (स्वास्थ्य संस्था / स्थानीय प्रमाण)</li>
+      <li>नजिकको नातेदारको नागरिकता</li>
+    </ul>
+  </div>
+  <div class="page" id="service-6">
+    <h2>सामाजिक सुरक्षा – आवश्यक कागजात</h2>
+    <ul>
+      <li>लाभग्राहीको नागरिकता प्रमाणपत्र</li>
+      <li>आमा–बाबुको नागरिकता</li>
+      <li>बैंक खाता विवरण</li>
+      <li>पासपोर्ट साइज फोटो</li>
+    </ul>
+  </div>
+</div>
+
+<!-- SLIDER / GALLERY -->
+<div class="slider">
+  <div class="slides">
+    <img src="https://i.ibb.co/DgvrnPVy/image.jpg" class="active" alt="Gallery 1">
+    <img src="https://i.ibb.co/9kM1tnfZ/IMG-20251217-WA0003.jpg" alt="Gallery 2">
+    <img src="https://i.ibb.co/xyz/sample3.jpg" alt="Gallery 3">
+  </div>
+  <div class="prev">&#10094;</div>
+  <div class="next">&#10095;</div>
+</div>
+
+<!-- ANNOUNCEMENTS FORM -->
+<div class="page-container">
+<form id="announcementForm">
+  <h2>नयाँ सूचना थप्नुहोस्</h2>
+  <label>Title</label>
+  <input type="text" id="title" required>
+  <label>Description</label>
+  <textarea id="desc" rows="3" required></textarea>
+  <label>Image URL</label>
+  <input type="text" id="imgUrl" placeholder="https://...">
+  <label>Video URL</label>
+  <input type="text" id="videoUrl" placeholder="https://...">
+  <label>Audio URL</label>
+  <input type="text" id="audioUrl" placeholder="https://...">
+  <button type="submit">सूचना थप्नुहोस्</button>
+</form>
+</div>
+
+<!-- ANNOUNCEMENTS DISPLAY -->
+<div class="page-container" id="announcementContainer"></div>
+
+<!-- FOOTER -->
+<footer>
+राक्सिराङ्ग गाउँपालिका वडा नं. ४ | Bagmati Province<br>
+फोन: 9855071025 | 9840234188<br>
+<div class="footer-links">
+<a href="#">नक्शा पास फारम डाउनलोड</a> | 
+<a href="#">नागरिकता / फारम डाउनलोड</a> | 
+<a href="#">गृह मन्त्रालय</a> | 
+<a href="#">सङ्घीय मामिला</a> | 
+<a href="#">मुख्यमन्त्री कार्यालय</a>
+</div>
+</footer>
+
+<script src="https://unpkg.com/nepali-date/dist/nepali-date.min.js"></script>
+<script>
+// Ribbon click
+const spans=document.querySelectorAll('#ribbon span');
+spans.forEach((s,i)=>{
+  s.onclick=()=>{
+    document.querySelectorAll('.page').forEach(p=>p.style.display='none');
+    document.getElementById('service-'+(i+1)).style.display='block';
+    window.scrollTo(0,0);
+  }
+});
+document.getElementById('service-1').style.display='block';
+
+// Date
+function updateDate(){
+  const today=new Date();
+  const enDate=today.toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});
+  const nepDate=new NepaliDate(today).format('YYYY MMMM DD');
+  document.getElementById('currentDate').innerText=`नेपाली: ${nepDate} | English: ${enDate}`;
+}
+updateDate();
+setInterval(updateDate,60000);
+
+// Announcement form
+document.getElementById('announcementForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  const title=document.getElementById('title').value;
+  const desc=document.getElementById('desc').value;
+  const img=document.getElementById('imgUrl').value;
+  const video=document.getElementById('videoUrl').value;
+  const audio=document.getElementById('audioUrl').value;
+
+  const div=document.createElement('div');
+  div.className='announcement';
+  div.innerHTML=`<h3>${title}</h3>
+                 <div class="announcement-content">
+                   <p>${desc}</p>
+                   ${img?`<img src="${img}">`:''}
+                   ${video?`<video controls><source src="${video}"></video>`:''}
+                   ${audio?`<audio controls><source src="${audio}"></audio>`:''}
+                 </div>`;
+  div.addEventListener('click',()=>{
+    const content=div.querySelector('.announcement-content');
+    content.style.display=content.style.display==='none'?'block':'none';
+  });
+  document.getElementById('announcementContainer').prepend(div);
+  this.reset();
+});
+
+// Slider
+let slideIndex=0;
+const slides=document.querySelectorAll('.slides img');
+const prev=document.querySelector('.prev');
+const next=document.querySelector('.next');
+
+function showSlide(n){
+  slides.forEach((s)=>s.classList.remove('active'));
+  slides[n].classList.add('active');
+}
+
+function nextSlide(){slideIndex=(slideIndex+1)%slides.length; showSlide(slideIndex);}
+function prevSlide(){slideIndex=(slideIndex-1+slides.length)%slides.length; showSlide(slideIndex);}
+next.addEventListener('click',nextSlide);
+prev.addEventListener('click',prevSlide);
+
+// Auto slide
+setInterval(nextSlide,5000);
+</script>
+
+</body>
+</html>
